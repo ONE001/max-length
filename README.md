@@ -2,6 +2,7 @@ max-length
 ==========
 
 This is simple plugin for native javascript.
+You don't need any dependencies.
 
 ## Usage
 
@@ -19,7 +20,7 @@ document.querySelector("input").maxLengthInput();
 maxLengthInput(document.querySelector("input"));
 
 // for all inputs
-document.querySelectorAll("input")..maxLengthInput();
+document.querySelectorAll("input").maxLengthInput();
 ```
 
 ## Plugin setup
