@@ -2,6 +2,7 @@ max-length
 ==========
 
 This is simple plugin for native javascript.
+
 You don't need any dependencies.
 
 ## Usage
@@ -48,3 +49,7 @@ document.querySelector("input").maxLengthInput({ interrupt_after_threshold : fal
 ``` js
 document.querySelector("input").maxLengthInput({ asc : false }); // by default true
 ```
+
+## Screenshot
+
+![View](https://raw.github.com/ONE001/max-length/master/screenshots/%D1%81%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA27.png "view")
