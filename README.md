@@ -17,12 +17,15 @@ You don't need any dependencies.
 ``` js
 // only one input
 document.querySelector("input").maxLengthInput();
+document.querySelector("input").maxLengthInput({ threshold : 20 });
 
 // only one input
 maxLengthInput(document.querySelector("input"));
+maxLengthInput(document.querySelector("input"), { threshold : 20, asc : false });
 
 // for all inputs
 document.querySelectorAll("input").maxLengthInput();
+document.querySelectorAll("input").maxLengthInput({ threshold : 20, interrupt_after_threshold : false });
 ```
 
 ## Plugin setup
