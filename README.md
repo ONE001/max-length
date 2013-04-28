@@ -1,7 +1,7 @@
 max-length
 ==========
 
-This is simple plugin for native javascript.
+This is a simple javascript plugin which was made on native javascript.
 
 You don't need any dependencies.
 
@@ -17,6 +17,7 @@ You don't need any dependencies.
 ``` js
 // only one input
 document.querySelector("input").maxLengthInput();
+
 // only one input
 maxLengthInput(document.querySelector("input"));
 
