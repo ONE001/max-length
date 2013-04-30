@@ -14,9 +14,7 @@ maxLengthInput = function() {
 	asc : true,
     },
     max_length = function(nodes) {
-        var counter;
-
-	counter = document.querySelector(".max-length-counter");
+    	var counter = document.querySelector(".max-length-counter");
 
 	if (!counter) {
 	    counter = document.createElement("span");
