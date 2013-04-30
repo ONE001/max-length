@@ -67,7 +67,7 @@ maxLengthInput = function() {
     retrieve_args = function(c) {
         if (!c) return false;
 
-        if (c.threshold && !isNaN(c.threshold)) {
+        if (c.threshold && c.threshold > 0 && !isNaN(c.threshold)) {
             config.threshold = parseInt(c.threshold, 10);
         }
 
