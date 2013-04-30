@@ -1,9 +1,3 @@
-/*
-* max-length.js
-* Copyright (C) 2013, Maxim Karpinskiy
-*
-* This content is released under the MIT License
-*/
 Node.prototype.maxLengthInput =
 NodeList.prototype.maxLengthInput =
 maxLengthInput = function() {
