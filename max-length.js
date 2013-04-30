@@ -63,11 +63,12 @@ maxLengthInput = function() {
                 }
             });
         }
+        return nodes;
     },
     retrieve_args = function(c) {
         if (!c) return false;
 
-        if (c.threshold && !isNaN(c.threshold)) {
+        if (c.threshold && c.threshold > 0 && !isNaN(c.threshold)) {
             config.threshold = parseInt(c.threshold, 10);
         }
 
@@ -82,16 +83,16 @@ maxLengthInput = function() {
             retrieve_args(arg[1]);
 
             if (arg[0] instanceof Node) {
-                max_length([arg[0]]);
+                return max_length([arg[0]]);
             } else if (arg[0] instanceof NodeList) {
-                max_length(arg[0]);
+                return max_length(arg[0]);
             }
         }
     } else if (this instanceof NodeList) {
         retrieve_args(arg[0]);
-        max_length(this);
+        return max_length(this);
     } else if (this instanceof Node) {
         retrieve_args(arg[0]);
-        max_length([this]);
+        return max_length([this]);
     }
 };
